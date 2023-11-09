@@ -660,6 +660,16 @@ background-color: #404bbf;
 color: #ffffff;
 border: none;
 }
+.page-link {
+color: #212121;
+display: inline-block;
+padding: 24px 0;
+position: relative;
+}
+.page-link:hover,
+.page-link:focus {
+ color: #2196F3;
+}
 .page-link-agencja::after {
 content: "";
 display: block;

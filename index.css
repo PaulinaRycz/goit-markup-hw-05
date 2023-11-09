@@ -670,6 +670,9 @@ position: relative;
 .page-link:focus {
  color: #2196F3;
 }
+.page-link-agencja {
+color: #2196F3;
+}
 .page-link-agencja::after {
 content: "";
 display: block;
@@ -681,7 +684,9 @@ width: 100%;
 bottom: -1px;
 left: 0px;
 }
-
+.page-link-portfolio{
+color: #2196F3;
+}
 .page-link-portfolio::after {
 content: "";
 display: block;

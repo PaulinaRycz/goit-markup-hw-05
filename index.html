@@ -19,9 +19,9 @@
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;">
             <div class="container3 container">
-                <a class="logo-name" WebStudio><span class="logo">Web</span>Studio</a>
+                <a class="logo-name" href="./index.html" WebStudio><span class="logo">Web</span><span class="logoo">Studio</span></a>
                 <nav style="margin-right: auto;">
-    <ul class="social-links" style="margin: 0; padding: 0; display: flex; gap: 40px; align-items: center;">
+    <ul class="social-links" style="margin: 0; padding: 0; display: flex; gap: 40px; align-items: center; text-decoration: none;">
         <a class="link" href="Agencja">Agencja</a>
         <a class="link" href="./portfolio.html">Portfolio</a>
         <a class="text"> Kontakt</a>
@@ -36,7 +36,7 @@
             <section class="hero">
             <div class="container">
             <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="service-button" type="button">Zamów usługe</button>
+            <button class="service-button" type="button" data-modal-open>Zamów usługe</button>
         </div>
     </section>
     <section class="section-lorem">
@@ -262,42 +262,42 @@
             <ul class="customers-list">
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg class="customers-icon-svg" widht="106" height="60">
+                        <svg class="customers-icon-svg" widht="106" height="48">
                             <use href="./images/sprite.svg#icon-logo-1"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg class="customers-icon-svg" widht="106" height="60">
+                        <svg class="customers-icon-svg" widht="106" height="48">
                             <use href="./images/sprite.svg#icon-logo-2"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg class="customers-icon-svg" widht="106" height="60">
+                        <svg class="customers-icon-svg" widht="106" height="48">
                             <use href="./images/sprite.svg#icon-logo-3"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg class="customers-icon-svg" widht="106" height="60">
+                        <svg class="customers-icon-svg" widht="106" height="48">
                             <use href="./images/sprite.svg#icon-logo-4"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg class="customers-icon-svg" widht="106" height="60">
+                        <svg class="customers-icon-svg" widht="106" height="48">
                             <use href="./images/sprite.svg#icon-logo-5"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="customers-icon-box">
                     <a class="customers-icon" href="#">
-                        <svg widht="106" height="60" class="customers-icon-svg">
+                        <svg widht="106" height="48" class="customers-icon-svg">
                             <use href="./images/sprite.svg#icon-logo-6"></use>
                         </svg>
                     </a>
@@ -320,28 +320,28 @@
     <ul class="footer-social-media">
         <li class="footer-social-media-list">
             <a class="footer-socialmedia-icon" href="#">
-                <svg class="footer-svg" width="20" height="20">
+                <svg class="footer-svg" width="22" height="22">
                     <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
             </a>
         </li>
         <li class="footer-social-media-list">
             <a class="footer-socialmedia-icon" href="#">
-                <svg class="footer-svg" width="20" height="20">
+                <svg class="footer-svg" width="22" height="22">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
             </a>
         </li>
         <li class="footer-social-media-list">
             <a class="footer-socialmedia-icon" href="#">
-                <svg width="20" height="20" class="footer-svg" >
+                <svg width="22" height="22" class="footer-svg" >
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
             </a>
         </li>
         <li class="footer-social-media-list">
             <a class="footer-socialmedia-icon" href="#">
-                <svg width="20" height="20" class="footer-svg">
+                <svg width="22" height="22" class="footer-svg">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
             </a>
@@ -350,5 +350,16 @@
     </div>
     </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+            <svg class="close-button-icon" width="11" height="11">
+                <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js">
+</script>
     </body>
 </html>

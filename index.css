@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .title { 
 font: 'Roboto';
 font-weight: 900;
@@ -8,7 +13,7 @@ letter-spacing: 0.06em;
 max-width: 696px;
 margin: 0 auto;
 text-align: center;
-margin-bottom: 48px;
+margin-bottom: 30px;
     
 }
 .signatures {
@@ -18,6 +23,8 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 padding-left: 24px;
+text-decoration:none;
+border-bottom: none;
 
 }
 .apps {
@@ -27,6 +34,8 @@ color:#757575;
 font-size: 16px;
 line-height: 1.9;
 padding-left: 24px;
+text-decoration: none;
+border-bottom: none;
 }
 .text {
     color:#212121;
@@ -35,15 +44,18 @@ padding-left: 24px;
     line-height: 1.1;
     font-size: 14px;
     cursor:pointer;
-
 }
+.text:hover, .text:active{
+color: #2196F3;
+}
+
 .link {
     color:#212121;
     font: 'Roboto';
     font-weight: 500;
     line-height: 1.1;
     font-size: 14px;
-
+    text-decoration: none;
 }
 .social-links .link:active, .link:hover { color: #2196F3;
 }
@@ -56,29 +68,42 @@ text-decoration: none;
 padding-top: 32px;
 padding-bottom: 32px;
 padding-right: 50px;
+cursor: pointer;
 }
 .social-links .link2:active, .link2:hover {
         color: #2196F3;
 }
 .street-name{
-    font:'Roboto';
     font-weight: 400;
-    line-height: 1.7;
     color:#FFFFFF;
     background: #2F303A;
     font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 16px;
 }
 .logo{ font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: #2196F3; }
+    color: #2196F3; 
+}
+.logoo{
+    font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color:#000000;
+}
 .logo-name{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     margin-right: 93px;
+    text-decoration: none;
 }
 .logo-name-footer{
     font-family: 'Raleway';
@@ -118,16 +143,18 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     font-size: 14px;
     line-height: 1.1;
     color:#212121;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .description{
     font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        color:#757575; 
-        letter-spacing: 0.03em;
-        text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color:#757575; 
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 10px;
 }
 .our-work{
     font-family: 'Roboto';
@@ -177,7 +204,6 @@ height: 80px;
 .social-button{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
     gap: 30px;
     
 }.text-button1{color: #212121;
@@ -188,7 +214,6 @@ height: 80px;
     cursor: pointer;
     background: #F5F4FA;
     border: none;
-    margin-right: 8px;
     border-radius: 4px;
     width: 121px;
     height: 38px;
@@ -252,6 +277,7 @@ height: 80px;
 }
 .container-services{
 max-width: 1600px;
+margin:0 auto;
 }
 .services7{
 padding: 120px 0;
@@ -263,8 +289,13 @@ padding: 96px 0 120px 0;
     padding: 0 15px;
 }
 .figure{
-    margin: 0;
-   margin-bottom: 94px;
+margin: 0;
+margin-bottom: 94px;
+}
+.portfolio2{
+    padding: 32px 16px;
+    text-decoration: none;
+    border-bottom: none;
 }
 .projects{
     display: flex;
@@ -282,12 +313,15 @@ padding: 0 15px;
     padding: 100px 0;
 }
 .link3 {
-    font: 'Roboto';
-    font-weight: 500;
     color: #757575;
-    line-height: 1.1;
     font-size: 14px;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 10px;
 }
 .div-footer-one {
     margin-right: 120px;
@@ -315,7 +349,10 @@ margin-bottom: 16px;
 
 }
 .social-links2{
+    margin-top: 10px;
     margin-left: 0px;
+    max-width: 246px;
+    line-height: 1.7;
 }
 .hero{
 max-width: 1600px;
@@ -331,7 +368,7 @@ margin: 0 auto;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-padding: 188px 0;
+padding: 200px 0;
 }
 .container2{
 width: 1200px;
@@ -349,8 +386,10 @@ flex-basis: calc((100%-30px)/3);
 .image{
     border: 1px solid #EEEEEE;
     border-top: none;
+    text-decoration: none;
 }
-.image:hover {
+.image:hover,
+.image:focus {
     border: 1px solid #E7E9FC;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
@@ -511,7 +550,6 @@ fill: #FFFFFF;
 }
 .team-description {
 padding: 32px 0;
-margin: 0 16px;
 gap: 8px;
 }
 .our-customers{
@@ -561,4 +599,64 @@ fill: currentColor;
 .customers-icon:focus {
 border-color: #2196F3;
 color: #2196F3;
+}
+.backdrop {
+position: fixed;
+inset: 0 0 auto;
+min-height: 100vh;
+background-color: rgba(0, 0, 0, 1);
+opacity: 1;
+pointer-events: all;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+}
+
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+background-color: #fcfcfc;
+width: 528px;
+min-height: 581px;
+border-radius: 4px;
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 30px;
+right: 30px;
+padding: 0;
+background-color:rgba(255, 255, 255, 1);
+border-radius: 50%;
+width: 30px;
+height: 30px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+color: rgba(0, 0, 0, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button-icon {
+fill: currentColor;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+background-color: var(--ocean-color);
+color: var(--white-color);
+border: none;
 }
